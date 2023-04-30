@@ -1,0 +1,53 @@
+originalDataSetPath: D:\Graduation Project\data\LibriSpeech ASR corpus\data\LibriSpeech\train-clean-100
+filterBankDataSetPath: dataSet\\filterBankDataSet\\AllData
+filterBankDataSetWithNormPath: D:\pythonProject\DeepSpeaker\dataSet\filterBankDataSetWithNorm\allData
+trainSetPath: dataSet\\filterBankDataSet\\TrainSet
+testSetPath: dataSet\\filterBankDataSet\\TestSet
+meanSavePath: mean.pt
+standardDeviationSavePath: standardDeviation.pt
+registerUtteranceSetPath: D:\pythonProject\DeepSpeaker\dataSet\originalDataSet\registerSet
+# deepSpeaker检查点保存路径
+checkpointFilePath: D:\\pythonProject\\DeepSpeaker\\model\\checkpoint\\DeepSpeaker
+
+speakerEmbedSavePath: D:\\pythonProject\\DeepSpeaker\\dataSet\\speakerEmbed
+# modelPath: D:\pythonProject\DeepSpeaker\Model\goodCheckpoint\DeepSpeaker\threshold-0.78_accuracy-0.99.pt
+modelPath: D:\pythonProject\DeepSpeaker\Model\checkpoint\DeepSpeaker\checkpoint_1_0.02627840909090909.pt
+# 是否使用预训练模型
+usePretrainedModel: TRUE
+# 如果使用预训练模型，预训练模型的路径
+pretrainModelPath: D:\\pythonProject\\DeepSpeaker\\Model\\checkpoint\\Pretrain\\checkpointPretrain_3_96.07843137254902.pt
+
+# 日志路径
+lossLogFilePath: D:\\pythonProject\\DeepSpeaker\\Log\\loss.txt
+EERLogFilePath: D:\\pythonProject\\DeepSpeaker\\Log\\EER.txt
+
+sampleRate: 16000
+# 训练轮数
+maxEpoch: 100000
+# 每个语句使用多少帧
+numFrame: 160
+batchSize: 32
+# 三元损失中的margin值
+tripletLossMargin: 0.5
+# 学习率
+learningRate: 0.01
+# 动量
+momentum: 0.90
+# 是否使用之前训练的模型
+useTheCheckpoint: TRUE
+# 是否使用检查点的EER数据
+useCheckPointEvaluation: FALSE
+# 在测试时，一个语句使用多少个negative语句
+
+numNegativeInTest: 44
+# 多少次batch测试一次模型
+testPerBatch: 100
+# 测试时，测试多少组
+testBatch: 16
+# 测试时，阈值每次变化大小
+thresholdChange: 0.01
+# 说话人识别时，相似度阈值
+threshold: 0.7
+
+# 挑选三元组时，最多参考多少个历史语句组
+historySize: 4

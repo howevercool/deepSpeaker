@@ -1,0 +1,26 @@
+# 预训练检查点保存路径
+pretrainCheckpointFilePath: "D:\\pythonProject\\DeepSpeaker\\model\\checkpoint\\Pretrain"
+
+# 预训练的日志路径
+pretrainLossLogFilePath: "D:\\pythonProject\\DeepSpeaker\\Log\\pretrainLoss.txt"
+pretrainAccuracyLogFilePath: "D:\\pythonProject\\DeepSpeaker\\Log\\pretrainAccuracy.txt"
+
+# 训练数据路径
+trainSetPath: "dataSet\\filterBankDataSet\\TrainSet"
+testSetPath: "dataSet\\filterBankDataSet\\TestSet"
+
+# 学习率
+learningRate: 0.000001
+# 动量
+momentum: 0.90
+# 训练阶段batch size
+trainBatchSize: 64
+# 测试阶段batch size
+testBatchSize: 64
+# 每个语句提取多少帧
+numFrame: 160
+
+maxEpoch: 10000
+
+useTheCheckpoint: TRUE
+useCheckPointEvaluation: FALSE
